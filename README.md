@@ -38,12 +38,12 @@ crowd-density-monitoring/
 └── .gitignore
 
 
-**Results**
+## Results
 The system detects people in crowded environments and provides the results through a mobile application.
 
-**Award**
+## Award
 🏆 Excellence Award, Undergraduate Capstone Competition, 2023
 
-**Notes**
+## Notes
 This repository contains code from an undergraduate capstone project.
 Some backend services used during the original development are no longer maintained.
