@@ -1,6 +1,6 @@
 # Crowd Density Monitoring
 
-A computer vision-based crowd density monitoring system developed as an undergraduate capstone project.
+A computer vision-based crowd density monitoring system developed as an undergraduate capstone project at the University of Ulsan (3-person team, 2023).
 
 <p align="center">
   <img src="assets/demo.png" width="900">
@@ -8,25 +8,32 @@ A computer vision-based crowd density monitoring system developed as an undergra
 
 ## Overview
 
-This project detects people in video and analyzes crowd density to identify potentially crowded areas.
-The detection results are integrated with an Android application that provides crowd-related information to users.
+This project detects people in camera video and analyzes crowd density by zone to identify potentially crowded areas.
+A webcam was installed at a CCTV-like viewpoint to reproduce real multi-use space conditions.
+The detection results are delivered to users through an Android application.
 
-The project was developed as an undergraduate capstone project at the University of Ulsan.
+## Pipeline
+
+Camera input → Person detection (YOLOv5) → Zone-wise people counting → Risk level decision → Android app alert
 
 ## Features
 
-- Person detection from video
-- Crowd density analysis
-- Android-based user interface
-- User registration and login
-- Visualization of crowd-related information
+- Person detection from real-time camera video
+- Zone-based crowd density analysis and risk level decision
+- Android application with user registration and login
+- Map-based visualization of crowd information
+
+## My Role
+
+- Integrated the full flow from video input to detection, risk decision logic, and user alerts
+- Identified missed detections of distant people during testing and tuned input resolution and detection settings
 
 ## Tech Stack
 
-- **Computer Vision:** YOLOv5
-- **Language:** Python, Java
-- **Mobile:** Android
-- **Tools:** OpenCV
+- **Computer Vision:** YOLOv5, OpenCV
+- **Language:** Python, C++, Java
+- **Mobile:** Android (Android Studio)
+- **API:** Map API
 
 ## Project Structure
 
@@ -36,14 +43,25 @@ crowd-density-monitoring/
 ├── assets/             # Demo images
 ├── README.md
 └── .gitignore
-
+```
 
 ## Results
-The system detects people in crowded environments and provides the results through a mobile application.
+
+The system detects people in crowded environments, estimates zone-wise density, and delivers risk alerts through the mobile application.
+
+## Roadmap
+
+- [x] Real-time person detection with YOLOv5
+- [x] Zone-based crowd density analysis and risk level decision
+- [x] Android application with alerts and map visualization
+- [ ] Release the person detection and density analysis module (Python)
 
 ## Award
-🏆 Excellence Award, Undergraduate Capstone Competition, 2023
+
+🏆 First Prize (최우수상), Undergraduate Capstone Design Competition, School of IT Convergence, University of Ulsan, 2023
 
 ## Notes
-This repository contains code from an undergraduate capstone project.
+
+This repository currently contains the Android application code from the capstone project.
+The person detection and density analysis module will be released in this repository.
 Some backend services used during the original development are no longer maintained.
