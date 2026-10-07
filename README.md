@@ -51,9 +51,9 @@ The system detects people in crowded environments, estimates zone-wise density, 
 
 ## Roadmap
 
-- [x] Real-time person detection with YOLOv5
-- [x] Zone-based crowd density analysis and risk level decision
-- [x] Android application with alerts and map visualization
+- [] Real-time person detection with YOLOv5
+- [] Zone-based crowd density analysis and risk level decision
+- [] Android application with alerts and map visualization
 - [ ] Release the person detection and density analysis module (Python)
 
 ## Award
